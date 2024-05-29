@@ -12,12 +12,19 @@
 <body>
     <div class="caixa-maior">
         <input class="input-cidade"  placeholder="Digite o nome da sua cidade">
-        <button class="btn-busca"><img class="img-busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="busca"></button>
-        <h2>Tempo em São Paulo</h2>
+        <button class="btn-busca" onclick="btnClick()"><img class="img-busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="busca"></button>
+        
+        <div class="caixa-media">
 
-        <p>21 C</p>
-        <img src="https://openweathermap.org/img/wn/04n.png" alt="icone-do-tempo">
-        <p>Umidade: 76%</p>
+            <h2 class="cidade">Tempo em São Paulo</h2>
+            <p class="temp">21º C</p>
+            
+            <div class="caixa-menor">
+                <img class="img-previsao" src="https://openweathermap.org/img/wn/04n.png" alt="icone-do-tempo">
+                <p class="texto-previsao">Nublado</p>
+            </div>
+            <p class="umidade">Umidade: 76%</p>
+        </div>
     </div>
 
     <script src="./script.js"></script>
